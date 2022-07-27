@@ -1,3 +1,4 @@
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import Article from './Components/Article/Article';
 import ArticleDetails from './Components/ArticleDetails/ArticleDetails';
@@ -7,6 +8,18 @@ import NavBar from './Components/NavBar/NavBar';
 
 
 function App() {
+
+  const [displayedArticles, setDisplayedArticles] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv")
+      .then(response => response.json())
+      .then(data => {
+        setDisplayedArticles(data.results)
+        }
+      )
+      .then(info => console.log('d', displayedArticles))
+  }, [])
 
   return (
     <div className="App">
