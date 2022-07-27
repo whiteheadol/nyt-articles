@@ -3,9 +3,9 @@ import React from 'react';
 const Article = () => {
 
   return(
-    <div>
+    <section>
       <p>Article!</p>
-    </div>
+    </section>
   )
 }
 
