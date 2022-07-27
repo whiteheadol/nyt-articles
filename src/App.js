@@ -24,7 +24,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <ArticlesContainer />
+      <ArticlesContainer
+        displayedArticles={displayedArticles}
+      />
       <Article />
       <ArticleDetails />
       <FoF />
@@ -33,3 +35,9 @@ function App() {
 }
 
 export default App;
+
+// Pass displayed articles down to correct components to display
+// Set up a dropdown menu (Build out navBar structure)
+// Set up the most basic css for page structure
+// Dropdown menu tied to a function that will fetch and update displayedArticles accordingly
+// Worry about 404 page once funtionality is there
