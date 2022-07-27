@@ -1,10 +1,18 @@
 import React from 'react';
+import Article from '../Article/Article';
 
-const ArticlesContainer = () => {
+const ArticlesContainer = ({ displayedArticles }) => {
+
+  const allArticles = displayedArticles.map(element => {
+    return (
+      <Article
+      />
+    )
+  })
 
   return(
     <div>
-      <p>Articles Container!</p>
+      <p>{allArticles}</p>
     </div>
   )
 }
