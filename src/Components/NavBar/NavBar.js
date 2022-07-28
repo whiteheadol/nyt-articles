@@ -21,13 +21,15 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
   }
 
   return(
-    <div className='nav'>
+    <section className='nav'>
       <h1>NYT Article Archive</h1>
+      <p className='label'>Explore by category:</p>
       <select name='selectCategory'
         id='selectCategory'
         name='selectCategory'
         onChange={categoryChangeHandler}
         value={categoryText}
+        className='dropdown'
         >
         <option value='home'>All</option>
         <option value='arts'>Arts</option>
@@ -37,7 +39,6 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
         <option value='fashion'>Fashion</option>
         <option value='food'>Food</option>
         <option value='health'>Health</option>
-        <option value='home'>Home</option>
         <option value='insider'>Insider</option>
         <option value='magazine'>Magazine</option>
         <option value='movies'>Movies</option>
@@ -57,7 +58,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
         <option value='us'>US</option>
         <option value='world'>World</option>
       </select>
-    </div>
+    </section>
   )
 }
 

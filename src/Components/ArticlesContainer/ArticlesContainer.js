@@ -20,9 +20,9 @@ const ArticlesContainer = ({ displayedArticles, setCurrentArticle }) => {
   })
 
   return(
-    <div className='all-articles'>
+    <section className='all-articles'>
       {allArticles}
-    </div>
+    </section>
   )
 }
 

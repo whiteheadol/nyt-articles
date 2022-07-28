@@ -47,9 +47,8 @@ function App() {
 }
 
 export default App;
+
+
 // <FoF />
-
-// Worry about 404 page once funtionality is there
-// Add basic styling to each article (border?) to see if it's working correctly
-
+// Worry about 404 page once funtionality is there -- Router!
 // error handling for a failed fetch
