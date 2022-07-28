@@ -1,8 +1,16 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.App-logo {
+.nav-and-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +43,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
