@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavBar.css';
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 
 
 const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory, categoryText, setCategoryText }) => {
