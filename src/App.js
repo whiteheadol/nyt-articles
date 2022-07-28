@@ -10,6 +10,7 @@ import NavBar from './Components/NavBar/NavBar';
 function App() {
 
   const [displayedArticles, setDisplayedArticles] = useState([]);
+  const [displayedCategory, setDisplayedCategory] = useState('home')
 
   useEffect(() => {
     fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv")
@@ -25,7 +26,11 @@ function App() {
   return (
     <div className='App'>
       <div className='nav-and-details'>
-        <NavBar />
+        <NavBar
+          setDisplayedArticles={setDisplayedArticles}
+          displayedCategory={displayedCategory}
+          setDisplayedCategory={setDisplayedCategory}
+        />
         <ArticleDetails />
       </div>
         <ArticlesContainer
