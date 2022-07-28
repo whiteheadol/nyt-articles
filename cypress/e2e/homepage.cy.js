@@ -5,6 +5,11 @@ describe ('Example', () => {
       statusCode: 200,
       fixture: 'articlesData'
     })
+
+    cy.intercept('GET', "https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv", {
+      fixture: 'artData'
+    })
+
     cy.visit('http://localhost:3000')
   });
 
@@ -29,12 +34,15 @@ describe ('Example', () => {
     cy.get('.details-abstract').should('contain', 'Some of the children were infected with adeno-associated virus 2 and shared a relatively uncommon gene variant, according to two small studies.')
     cy.get('.details-link').should('contain', 'Full Article')
     cy.get('.details-href').should('have.attr', 'href')
-
   })
 
+  it('The user should be able to click on a thumbnail to view more detailed information about the article', () => {
+
+    cy.get('select').select('arts')
+    cy.get('.article-div').first().should('contain', 'Who Can Play the King? Questions of Representation Fuel Casting Debates.')
+
+  })
 })
 
-// Test that everything is on the homepage
-// Test that a user can click on an article to view ArticleDetails
 // Test that a user can select a category of article
 // Test that they can click on a new article and view its details
