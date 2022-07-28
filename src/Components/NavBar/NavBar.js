@@ -21,7 +21,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
   }
 
   return(
-    <div className='nav'>
+    <section className='nav'>
       <h1>NYT Article Archive</h1>
       <p className='label'>Explore by category:</p>
       <select name='selectCategory'
@@ -58,7 +58,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
         <option value='us'>US</option>
         <option value='world'>World</option>
       </select>
-    </div>
+    </section>
   )
 }
 
