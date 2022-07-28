@@ -1,6 +1,10 @@
 .article-details {
-  border: 2px solid green;
   height: 20em;
   width: 50%;
-  margin: 1em;
+  margin: 0 2em 4em 0;
+}
+
+.details {
+  padding: 0.6em;
+  font-size: 1.2em;
 }
