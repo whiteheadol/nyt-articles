@@ -11,10 +11,10 @@ const Article = ({ title, byline, setCurrentArticle, shorturl, displayedArticles
   };
 
   return(
-    <div className='article-div' onClick={handleCurrentArticle} id={shorturl}>
+    <section className='article-div' onClick={handleCurrentArticle} id={shorturl}>
       <p className='article-title'>{title}</p>
       <p className='article-byline'>{byline}</p>
-    </div>
+    </section>
   )
 }
 
