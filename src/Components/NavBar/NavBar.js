@@ -22,7 +22,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
 
   return(
     <section className='nav'>
-      <h1>NYT Article Archive</h1>
+      <h1 className='nav-title'>NYT Article Archive</h1>
       <p className='label'>Explore by category:</p>
       <select name='selectCategory'
         id='selectCategory'
