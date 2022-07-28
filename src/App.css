@@ -2,6 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  font-family: 'Ibarra Real Nova', serif;
 }
 
 .nav-and-details {
