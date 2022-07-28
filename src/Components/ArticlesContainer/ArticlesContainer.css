@@ -1,6 +1,6 @@
 .all-articles {
   display: flex;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
