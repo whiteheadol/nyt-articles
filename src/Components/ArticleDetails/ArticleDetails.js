@@ -6,10 +6,9 @@ const ArticleDetails = ({ currentArticle }) => {
 
   return(
     <div className='article-details'>
-      <h2>{currentArticle.title}</h2>
-      <p>{currentArticle.byline}</p>
-      <p>{currentArticle.abstract}</p>
-      <p>{currentArticle.url}</p>
+      <h2 className='details'>{currentArticle.title}</h2>
+      <p className='details'>{currentArticle.byline}</p>
+      <p className='details'>{currentArticle.abstract}</p>
       {currentArticle.url && <a href={currentArticle.url}><p>Full Article</p></a>}
     </div>
   )
