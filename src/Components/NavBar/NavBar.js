@@ -11,6 +11,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
       .then(data => {
         console.log(data.results)
         setDisplayedArticles(data.results)
+        console.log('nav')
         }
       )
   }, [displayedCategory])
