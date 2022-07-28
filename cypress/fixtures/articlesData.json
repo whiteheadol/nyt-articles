@@ -1,0 +1,134 @@
+{ "results" :[
+  {
+  "section": "health",
+  "subsection": "",
+  "title": "Viral Infections and Gene Variant Are Linked to Child Hepatitis Cases",
+  "abstract": "Some of the children were infected with adeno-associated virus 2 and shared a relatively uncommon gene variant, according to two small studies.",
+  "url": "https://www.nytimes.com/2022/07/26/health/children-hepatitis-virus.html",
+  "uri": "nyt://article/362276a1-520e-56d7-a53c-63975291cfaa",
+  "byline": "By Emily Anthes",
+  "item_type": "Article",
+  "updated_date": "2022-07-26T17:40:16-04:00",
+  "created_date": "2022-07-26T16:57:11-04:00",
+  "published_date": "2022-07-26T16:57:11-04:00",
+  "material_type_facet": "",
+  "kicker": "",
+  "des_facet": [
+  "Children and Childhood",
+  "Hepatitis",
+  "Liver",
+  "Viruses",
+  "Research",
+  "Genetics and Heredity",
+  "your-feed-healthcare"
+  ],
+  "org_facet": [
+  "World Health Organization"
+  ],
+  "per_facet": [ ],
+  "geo_facet": [
+  "Great Britain"
+  ],
+  "multimedia": [
+  {
+  "url": "https://static01.nyt.com/images/2022/07/26/science/26hepatitis/26hepatitis-superJumbo.jpg",
+  "format": "Super Jumbo",
+  "height": 1365,
+  "width": 2048,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "The computer model of adeno-associated virus type 2.",
+  "copyright": "Laguna Design/Science Source"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2022/07/26/science/26hepatitis/26hepatitis-threeByTwoSmallAt2X.jpg",
+  "format": "threeByTwoSmallAt2X",
+  "height": 400,
+  "width": 600,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "The computer model of adeno-associated virus type 2.",
+  "copyright": "Laguna Design/Science Source"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2022/07/26/science/26hepatitis/26hepatitis-thumbLarge.jpg",
+  "format": "Large Thumbnail",
+  "height": 150,
+  "width": 150,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "The computer model of adeno-associated virus type 2.",
+  "copyright": "Laguna Design/Science Source"
+  }
+  ],
+  "short_url": "https://nyti.ms/3S7GYaq"
+  },
+  {
+  "section": "science",
+  "subsection": "space",
+  "title": "Buzz Aldrin’s Space Memorabilia Sells for More Than $8 Million",
+  "abstract": "A jacket that the astronaut wore during the Apollo 11 mission to the moon in 1969 and his Presidential Medal of Freedom were among the items auctioned off by Sotheby’s in New York City.",
+  "url": "https://www.nytimes.com/2022/07/26/science/space/buzz-aldrin-memorabilia-auction.html",
+  "uri": "nyt://article/729f7a98-1605-5a65-b00a-a145baadd26e",
+  "byline": "By Christine Chung",
+  "item_type": "Article",
+  "updated_date": "2022-07-26T16:54:48-04:00",
+  "created_date": "2022-07-26T16:32:45-04:00",
+  "published_date": "2022-07-26T16:32:45-04:00",
+  "material_type_facet": "",
+  "kicker": "",
+  "des_facet": [
+  "Space and Astronomy",
+  "Auctions",
+  "Memorabilia and Souvenirs",
+  "Archives and Records",
+  "Apollo Project",
+  "Collectors and Collections"
+  ],
+  "org_facet": [
+  "Sotheby's",
+  "National Aeronautics and Space Administration"
+  ],
+  "per_facet": [
+  "Aldrin, Buzz",
+  "Armstrong, Neil Alden"
+  ],
+  "geo_facet": [
+  "New York City"
+  ],
+  "multimedia": [
+  {
+  "url": "https://static01.nyt.com/images/2022/07/21/multimedia/21xp-buzz5/21xp-buzz5-superJumbo.jpg",
+  "format": "Super Jumbo",
+  "height": 2048,
+  "width": 2048,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Mr. Aldrin during the Apollo 11 mission to the moon in 1969.",
+  "copyright": "EPA, via Shutterstock"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2022/07/21/multimedia/21xp-buzz5/21xp-buzz5-threeByTwoSmallAt2X.jpg",
+  "format": "threeByTwoSmallAt2X",
+  "height": 400,
+  "width": 600,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Mr. Aldrin during the Apollo 11 mission to the moon in 1969.",
+  "copyright": "EPA, via Shutterstock"
+  },
+  {
+  "url": "https://static01.nyt.com/images/2022/07/21/multimedia/21xp-buzz5/21xp-buzz5-thumbLarge.jpg",
+  "format": "Large Thumbnail",
+  "height": 150,
+  "width": 150,
+  "type": "image",
+  "subtype": "photo",
+  "caption": "Mr. Aldrin during the Apollo 11 mission to the moon in 1969.",
+  "copyright": "EPA, via Shutterstock"
+  }
+  ],
+  "short_url": "https://nyti.ms/3Ow8XgM"
+  }
+]
+}
