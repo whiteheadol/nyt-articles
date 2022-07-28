@@ -20,6 +20,7 @@ function App() {
       .then(data => {
         // console.log(data.results)
         setDisplayedArticles(data.results)
+        console.log('app')
         }
       )
   }, [])
