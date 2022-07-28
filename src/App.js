@@ -18,7 +18,7 @@ function App() {
     fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv")
       .then(response => response.json())
       .then(data => {
-        console.log(data.results)
+        // console.log(data.results)
         setDisplayedArticles(data.results)
         }
       )
@@ -52,3 +52,4 @@ export default App;
 // <FoF />
 // Worry about 404 page once funtionality is there -- Router!
 // error handling for a failed fetch
+// Test a failed network request
