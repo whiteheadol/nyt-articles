@@ -1,15 +1,35 @@
 import React from 'react';
 import './NavBar.css';
+import {useState, useEffect} from 'react';
 
-const NavBar = () => {
+
+const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory, categoryText, setCategoryText }) => {
+
+  useEffect(() => {
+    fetch(`https://api.nytimes.com/svc/topstories/v2/${displayedCategory}.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv`)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data.results)
+        setDisplayedArticles(data.results)
+        }
+      )
+  }, [displayedCategory])
+
+  const categoryChangeHandler = (e) => {
+    setCategoryText(e.target.value)
+    setDisplayedCategory(e.target.value)
+  }
 
   return(
     <div className='nav'>
       <h1>NYT Article Archive</h1>
       <select name='selectCategory'
         id='selectCategory'
+        name='selectCategory'
+        onChange={categoryChangeHandler}
+        value={categoryText}
         >
-        <option value='All'>All</option>
+        <option value='home'>All</option>
         <option value='arts'>Arts</option>
         <option value='automobiles'>Automobiles</option>
         <option value='books'>Books</option>
@@ -40,11 +60,5 @@ const NavBar = () => {
     </div>
   )
 }
-// onChange={seasonChangeHandler}
-// value={seasonText}
 
 export default NavBar;
-
-// On change, change the value
-// When the value changes, an onEffect to fetch that topic's stories
-// 
