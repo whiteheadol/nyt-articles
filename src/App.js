@@ -11,7 +11,8 @@ function App() {
 
   const [displayedArticles, setDisplayedArticles] = useState([]);
   const [displayedCategory, setDisplayedCategory] = useState('home');
-  const [categoryText, setCategoryText] = useState('home')
+  const [categoryText, setCategoryText] = useState('home');
+  const [currentArticle, setCurrentArticle] = useState({});
 
   useEffect(() => {
     fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv")
@@ -21,7 +22,6 @@ function App() {
         setDisplayedArticles(data.results)
         }
       )
-      // .then(info => console.log('d', displayedArticles))
   }, [])
 
   return (
@@ -34,10 +34,13 @@ function App() {
           categoryText={categoryText}
           setCategoryText={setCategoryText}
         />
-        <ArticleDetails />
+        <ArticleDetails
+          currentArticle={currentArticle}
+        />
       </div>
         <ArticlesContainer
           displayedArticles={displayedArticles}
+          setCurrentArticle={setCurrentArticle}
         />
     </div>
   );
@@ -46,9 +49,7 @@ function App() {
 export default App;
 // <FoF />
 
-// Pass displayed articles down to correct components to display
-// Set up a dropdown menu (Build out navBar structure)
-// Set up the most basic css for page structure
-// Dropdown menu tied to a function that will fetch and update displayedArticles accordingly
 // Worry about 404 page once funtionality is there
 // Add basic styling to each article (border?) to see if it's working correctly
+
+// error handling for a failed fetch
