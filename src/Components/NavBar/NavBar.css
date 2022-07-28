@@ -1,6 +1,21 @@
 .nav {
-  border: 2px solid green;
-  height: 10em;
+  /* border: 2px solid green; */
+  height: 16em;
   width: 30%;
   margin: 1em;
+}
+
+.dropdown {
+  height: 2em;
+  width: 12em;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+.label {
+  margin-top: 2em;
+  font-size: 1.2em;
 }
