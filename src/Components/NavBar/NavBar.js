@@ -3,11 +3,7 @@ import './NavBar.css';
 import {useState, useEffect} from 'react';
 
 
-const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory }) => {
-
-// Method to find the value selected (Maybe store in state to be able to watch for a change with useEffect)
-// Method to fetch the new data
-
+const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory, categoryText, setCategoryText }) => {
 
   useEffect(() => {
     fetch(`https://api.nytimes.com/svc/topstories/v2/${displayedCategory}.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv`)
@@ -19,21 +15,21 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory 
       )
   }, [displayedCategory])
 
-  const categoryChangeHandler = () => {
-    setDisplayedCategory('arts')
+  const categoryChangeHandler = (e) => {
+    setCategoryText(e.target.value)
+    setDisplayedCategory(e.target.value)
   }
-
-  // Hardcoded in to change to arts only, next step to make this dynamic
-
 
   return(
     <div className='nav'>
       <h1>NYT Article Archive</h1>
       <select name='selectCategory'
         id='selectCategory'
+        name='selectCategory'
         onChange={categoryChangeHandler}
+        value={categoryText}
         >
-        <option value='All'>All</option>
+        <option value='home'>All</option>
         <option value='arts'>Arts</option>
         <option value='automobiles'>Automobiles</option>
         <option value='books'>Books</option>
@@ -64,11 +60,5 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory 
     </div>
   )
 }
-// onChange={seasonChangeHandler}
-// value={seasonText}
 
 export default NavBar;
-
-// On change, change the value
-// When the value changes, an onEffect to fetch that topic's stories
-//
