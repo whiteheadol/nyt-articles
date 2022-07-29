@@ -1,9 +1,10 @@
 import React from 'react';
 import './NavBar.css';
 import {useEffect} from 'react';
+import { Link } from 'react-router-dom';
 
 
-const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory, categoryText, setCategoryText }) => {
+const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory, categoryText, setCategoryText, setCurrentArticle }) => {
 
   useEffect(() => {
     fetch(`https://api.nytimes.com/svc/topstories/v2/${displayedCategory}.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv`)
@@ -19,6 +20,10 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
   const categoryChangeHandler = (e) => {
     setCategoryText(e.target.value)
     setDisplayedCategory(e.target.value)
+  }
+
+  const clearCurrent = () => {
+    setCurrentArticle({})
   }
 
   return(
@@ -59,7 +64,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
         <option value='us'>US</option>
         <option value='world'>World</option>
       </select>
-      <button className='saved-btn'><strong>Saved Articles</strong></button>
+      <Link to={'/saved'} onClick={clearCurrent}><button className='btn'><strong>Saved Articles</strong></button></Link>
     </section>
   )
 }
