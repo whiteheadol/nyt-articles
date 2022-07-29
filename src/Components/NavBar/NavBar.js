@@ -4,15 +4,20 @@ import {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 
-const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory, categoryText, setCategoryText, setCurrentArticle }) => {
+const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory, categoryText, setCategoryText, setCurrentArticle, error, setError }) => {
 
   useEffect(() => {
     fetch(`https://api.nytimes.com/svc/topstories/v2/${displayedCategory}.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv`)
-      .then(response => response.json())
+      .then(response => {
+        if (response.ok) {
+          setError(false)
+          return response.json()
+        } else {
+          setError(true)
+        }
+      })
       .then(data => {
-        console.log(data.results)
         setDisplayedArticles(data.results)
-        console.log('nav')
         }
       )
   }, [displayedCategory])
