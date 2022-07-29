@@ -1,12 +1,20 @@
 .App {
-  text-align: center;
   display: flex;
   flex-direction: column;
   font-family: 'Ibarra Real Nova', serif;
+  text-align: center;
 }
 
 .nav-and-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.load-error {
+  font-size: 3em;
+}
+
+a {
+  color: #567b94;
 }
