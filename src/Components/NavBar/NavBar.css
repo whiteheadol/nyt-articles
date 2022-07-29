@@ -23,7 +23,7 @@ h1 {
   font-size: 1.4em;
 }
 
-.saved-btn {
+.btn {
   background-color: #f7f5f5;
   border: none;
   margin-top: 1em;
@@ -33,7 +33,7 @@ h1 {
   font-family: 'Ibarra Real Nova', serif;
 }
 
-.saved-btn:hover {
+.btn:hover {
   cursor: pointer;
   transform: scale(1.06);
   transition: .6s;
