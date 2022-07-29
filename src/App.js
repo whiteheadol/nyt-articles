@@ -27,11 +27,13 @@ function App() {
           setError(false)
           return response.json()
         } else {
-          setError(true)
+          return setError(true)
         }
       })
       .then(data => {
-        setDisplayedArticles(data.results)
+        if(!error) {
+          setDisplayedArticles(data.results)
+          }
         }
       )
   }, [])
