@@ -85,3 +85,5 @@ export default App;
 // Worry about 404 page once funtionality is there -- Router!
 // error handling for a failed fetch
 // Test a failed network request
+
+// Bit more buffer maybe a media query?
