@@ -24,7 +24,7 @@ const ArticleDetails = ({ currentArticle, savedArticles, setSavedArticles }) => 
       <h2 className='details details-title'>{currentArticle.title}</h2>
       <p className='details details-byline'>{currentArticle.byline}</p>
       <p className='details details-abstract'>{currentArticle.abstract}</p>
-      {currentArticle.url && <a href={currentArticle.url} className='details-href'><p className='details-link'>Full Article</p></a>}
+      {currentArticle.url && <a href={currentArticle.url} className='details-href'><p className='details-link'><strong>Full Article</strong></p></a>}
       {(!checkIfSaved(currentArticle, savedArticles) && currentArticle.url)&& <button className='save-btn' onClick={addArticle}><strong>Save for Later</strong></button>}
     </section>
   )
