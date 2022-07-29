@@ -26,7 +26,6 @@ The project spec can be found [here](https://mod4.turing.edu/projects/take_home/
   - JSX/HTML
   - CSS
   - Cypress
-  - Express/Restful APIs
 
 ## Features
 - On page load, a user will see a selection of article thumbnails across a variety of categories. From there, they can click on an article for more details, or use the dropdown menu to filter for more specific articles.
