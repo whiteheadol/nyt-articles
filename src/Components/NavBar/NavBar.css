@@ -1,17 +1,17 @@
 .nav {
-  height: 16em;
-  width: 30%;
-  margin: 1em;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 16em;
   justify-content: flex-start;
+  margin: 1em;
+  width: 30%;
 }
 
 .dropdown {
+  font-size: 1.2em;
   height: 2em;
   width: 12em;
-  font-size: 1.2em;
 }
 
 h1 {
@@ -19,18 +19,18 @@ h1 {
 }
 
 .label {
-  margin-top: 2em;
   font-size: 1.4em;
+  margin-top: 2em;
 }
 
 .btn {
   background-color: #f7f5f5;
   border: none;
-  margin-top: 1em;
-  font-size: 1.2em;
-  padding: 0.6em;
   border-radius: 1em;
   font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.2em;
+  margin-top: 1em;
+  padding: 0.6em;
 }
 
 .btn:hover {

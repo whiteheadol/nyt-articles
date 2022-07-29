@@ -19,8 +19,6 @@ const ArticlesContainer = ({ displayedArticles, setCurrentArticle }) => {
     }
   })
 
-  //forEach? How does React handle elements of an array that are undefined or null?
-
   return(
     <section className='all-articles'>
       {allArticles}

@@ -18,19 +18,28 @@ function App() {
   const [categoryText, setCategoryText] = useState('home');
   const [currentArticle, setCurrentArticle] = useState({});
   const [savedArticles, setSavedArticles] = useState([]);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv")
-      .then(response => response.json())
+      .then(response => {
+        if (response.ok) {
+          setError(false)
+          return response.json()
+        } else {
+          setError(true)
+        }
+      })
       .then(data => {
         setDisplayedArticles(data.results)
-        console.log('app')
         }
       )
   }, [])
 
+
   return (
     <div className='App'>
+      {error && <p className='load-error'>Oh no! There was a problem loading articles, we're trying our best to get this resolved.</p>}
       <Switch>
         <Route exact path='/' render={() => {
           return <div>
@@ -42,6 +51,8 @@ function App() {
                 categoryText={categoryText}
                 setCategoryText={setCategoryText}
                 setCurrentArticle={setCurrentArticle}
+                error={error}
+                setError={setError}
                 />
                 <ArticleDetails
                 currentArticle={currentArticle}
@@ -73,6 +84,7 @@ function App() {
             />
           </div>
         }} />
+        <Route path="*" component={FoF} />
       </Switch>
     </div>
   );
