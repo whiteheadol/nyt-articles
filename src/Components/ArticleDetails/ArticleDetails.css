@@ -1,22 +1,22 @@
 .article-details {
   height: 20em;
-  width: 50%;
   margin: 0 2em 4em 0;
+  width: 50%;
 }
 
 .details {
-  padding: 0.6em;
   font-size: 1.2em;
+  padding: 0.6em;
 }
 
 .save-btn {
   background-color: #f7f5f5;
-  border: none;
-  margin-top: 1em;
-  font-size: 1.2em;
   padding: 0.6em;
+  border: none;
   border-radius: 1em;
   font-family: 'Ibarra Real Nova', serif;
+  font-size: 1.2em;
+  margin-top: 1em;
 }
 
 .save-btn:hover {
