@@ -21,6 +21,7 @@ The project spec can be found [here](https://mod4.turing.edu/projects/take_home/
 ## Technologies
   - React
   - React Router
+  - GitHub Actions
   - Javascript
   - JSX/HTML
   - CSS
