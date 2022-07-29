@@ -5,6 +5,10 @@ import ArticleDetails from './Components/ArticleDetails/ArticleDetails';
 import ArticlesContainer from './Components/ArticlesContainer/ArticlesContainer';
 import FoF from './Components/FoF/FoF';
 import NavBar from './Components/NavBar/NavBar';
+import FavNav from './Components/FavNav/FavNav';
+import FavDetails from './Components/FavDetails/FavDetails';
+import FavContainer from './Components/FavContainer/FavContainer';
+import { Route, Switch } from 'react-router-dom';
 
 
 function App() {
@@ -27,24 +31,49 @@ function App() {
 
   return (
     <div className='App'>
-      <div className='nav-and-details'>
-        <NavBar
-          setDisplayedArticles={setDisplayedArticles}
-          displayedCategory={displayedCategory}
-          setDisplayedCategory={setDisplayedCategory}
-          categoryText={categoryText}
-          setCategoryText={setCategoryText}
-        />
-        <ArticleDetails
-          currentArticle={currentArticle}
-          savedArticles={savedArticles}
-          setSavedArticles={setSavedArticles}
-        />
-      </div>
-        <ArticlesContainer
-          displayedArticles={displayedArticles}
-          setCurrentArticle={setCurrentArticle}
-        />
+      <Switch>
+        <Route exact path='/' render={() => {
+          return <div>
+              <div className='nav-and-details'>
+                <NavBar
+                setDisplayedArticles={setDisplayedArticles}
+                displayedCategory={displayedCategory}
+                setDisplayedCategory={setDisplayedCategory}
+                categoryText={categoryText}
+                setCategoryText={setCategoryText}
+                setCurrentArticle={setCurrentArticle}
+                />
+                <ArticleDetails
+                currentArticle={currentArticle}
+                savedArticles={savedArticles}
+                setSavedArticles={setSavedArticles}
+                />
+              </div>
+            <ArticlesContainer
+              displayedArticles={displayedArticles}
+              setCurrentArticle={setCurrentArticle}
+            />
+          </div>
+        }} />
+        <Route exact path='/saved' render={() => {
+          return <div>
+            <div className='nav-and-details'>
+              <FavNav
+                setCurrentArticle={setCurrentArticle}
+              />
+              <FavDetails
+                currentArticle={currentArticle}
+                savedArticles={savedArticles}
+                setSavedArticles={setSavedArticles}
+              />
+            </div>
+            <FavContainer
+              savedArticles={savedArticles}
+              setCurrentArticle={setCurrentArticle}
+            />
+          </div>
+        }} />
+      </Switch>
     </div>
   );
 }
