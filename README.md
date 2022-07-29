@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# NYT Article Achive
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="500" alt="article-thumbnails" src="https://user-images.githubusercontent.com/96206823/181785254-e62620eb-16f8-4287-a420-73320d3cb36e.png">
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+  - [Introduction](#introduction)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Contributors](#contributors)
+  - [Additional Resources](#additional-resources)
 
-### `npm start`
+## Introduction
+This application was built as a take home challenge and utilizes the NYT [Top Stories API](https://developer.nytimes.com/my-apps/15541d91-0216-4e06-a8d7-cdca6b617567). Developers were given an 8-hour time frame to meet an MVP, but all other decisions were to be made by them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project spec can be found [here](https://mod4.turing.edu/projects/take_home/take_home_fe), and the rubric can be found [here](https://mod4.turing.edu/projects/take_home/take_home_rubric).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies
+  - React
+  - React Router
+  - Javascript
+  - JSX/HTML
+  - CSS
+  - Cypress
+  - Express/Restful APIs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
+- On page load, a user will see a selection of article thumbnails across a variety of categories. From there, they can click on an article for more details, or use the dropdown menu to filter for more specific articles.
+- When viewing an article's details, a user can 'Save for Later'. They can then navigate to their Saved Articles to revisit them.
 
-### `npm run build`
+## Possible Future Extensions
+- I would love to add user authentication in the future so that a user can save specific articles under their personal profile.
+- I would also enjoy building out testing for all sad paths, as just the happy paths are tested at the moment.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Set Up
+1. Clone this repo to your local machine.
+2. `cd` into the directory once cloned.
+3. Run `npm start` to view the application in your browser.
+4. Enjoy exploring new articles!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contributors
+- Olivia Whitehead (GitHub: whiteheadol)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Additional Resources
+- [Wireframe](https://user-images.githubusercontent.com/96206823/181784833-76e2108b-b46d-4cf1-ba42-ea5ff4ad122b.png)
+- [Project Board](https://github.com/users/whiteheadol/projects/1/views/1)
