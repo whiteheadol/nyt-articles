@@ -1,4 +1,4 @@
-describe ('Example', () => {
+describe ('Homepage', () => {
 
   beforeEach(() => {
     cy.intercept('GET', "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv", {
@@ -7,6 +7,7 @@ describe ('Example', () => {
     })
 
     cy.intercept('GET', "https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv", {
+      statusCode: 200,
       fixture: 'artData'
     })
 
@@ -38,11 +39,17 @@ describe ('Example', () => {
 
   it('The user should be able to click on a thumbnail to view more detailed information about the article', () => {
 
-    cy.get('select').select('arts')
-    cy.get('.article-div').first().should('contain', 'Who Can Play the King? Questions of Representation Fuel Casting Debates.')
+    // setTimeout(() => {
+      cy.get('select').select('arts')
+      cy.get('.article-div').should('contain', 'Who Can Play the King? Questions of Representation Fuel Casting Debates.')
+      cy.get('.article-byline').should('contain', 'By Marc Tracy')
 
+      cy.get('.article-div').click()
+      cy.get('.details-title').should('contain', 'Who Can Play the King? Questions of Representation Fuel Casting Debates.')
+      cy.get('.details-byline').should('contain', 'By Marc Tracy')
+      cy.get('.details-abstract').should('contain', 'Should Shakespeare’s Richard III be reserved for disabled actors? Does the character have to be played by a white man? By a man at all? Three recent productions took different tacks.')
+      cy.get('.details-link').should('contain', 'Full Article')
+      cy.get('.details-href').should('have.attr', 'href')
+    // }, 1000)
   })
 })
-
-// Test that a user can select a category of article
-// Test that they can click on a new article and view its details
