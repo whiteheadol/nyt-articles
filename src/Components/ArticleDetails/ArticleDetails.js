@@ -6,10 +6,10 @@ const ArticleDetails = ({ currentArticle }) => {
 
   return(
     <section className='article-details'>
-      <h2 className='details'>{currentArticle.title}</h2>
-      <p className='details'>{currentArticle.byline}</p>
-      <p className='details'>{currentArticle.abstract}</p>
-      {currentArticle.url && <a href={currentArticle.url}><p>Full Article</p></a>}
+      <h2 className='details details-title'>{currentArticle.title}</h2>
+      <p className='details details-byline'>{currentArticle.byline}</p>
+      <p className='details details-abstract'>{currentArticle.abstract}</p>
+      {currentArticle.url && <a href={currentArticle.url} className='details-href'><p className='details-link'>Full Article</p></a>}
     </section>
   )
 }

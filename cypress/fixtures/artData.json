@@ -1,0 +1,70 @@
+{ "results":[
+  {
+    "section": "theater",
+    "subsection": "",
+    "title": "Who Can Play the King? Questions of Representation Fuel Casting Debates.",
+    "abstract": "Should Shakespeare’s Richard III be reserved for disabled actors? Does the character have to be played by a white man? By a man at all? Three recent productions took different tacks.",
+    "url": "https://www.nytimes.com/2022/07/28/theater/richard-iii-casting-debates.html",
+    "uri": "nyt://article/620f0893-233d-5daf-8afe-3c21ae3a87fc",
+    "byline": "By Marc Tracy",
+    "item_type": "Article",
+    "updated_date": "2022-07-28T12:24:10-04:00",
+    "created_date": "2022-07-28T03:00:17-04:00",
+    "published_date": "2022-07-28T03:00:17-04:00",
+    "material_type_facet": "",
+    "kicker": "",
+    "des_facet": [
+    "Theater",
+    "Actors and Actresses",
+    "Disabilities",
+    "Richard III (Play)",
+    "Stratford Shakespeare Festival",
+    "Race and Ethnicity",
+    "Homosexuality and Bisexuality",
+    "Transgender and Transsexuals",
+    "Movies",
+    "internal-storyline-no"
+    ],
+    "org_facet": [
+    "Royal Shakespeare Co",
+    "Shakespeare in the Park",
+    "Public Theater"
+    ],
+    "per_facet": [ ],
+    "geo_facet": [ ],
+    "multimedia": [
+    {
+    "url": "https://static01.nyt.com/images/2022/07/27/arts/00CASTING-DEBATE-COMBO/00CASTING-DEBATE-COMBO-superJumbo.jpg",
+    "format": "Super Jumbo",
+    "height": 1365,
+    "width": 2048,
+    "type": "image",
+    "subtype": "photo",
+    "caption": "Three productions this summer of “Richard III” took different approaches to the title role: Colm Feore, left, appeared at the Stratford Festival in Canada; Danai Gurira, center, at Free Shakespeare in the Park in New York; and Arthur Hughes, right, at the Royal Shakespeare Company in Britain.",
+    "copyright": "From left: David Hou; Sara Krulwich/The New York Times; Ellie Kurttz, via Royal Shakespeare Company"
+    },
+    {
+    "url": "https://static01.nyt.com/images/2022/07/27/arts/00CASTING-DEBATE-COMBO/00CASTING-DEBATE-COMBO-threeByTwoSmallAt2X.jpg",
+    "format": "threeByTwoSmallAt2X",
+    "height": 400,
+    "width": 600,
+    "type": "image",
+    "subtype": "photo",
+    "caption": "Three productions this summer of “Richard III” took different approaches to the title role: Colm Feore, left, appeared at the Stratford Festival in Canada; Danai Gurira, center, at Free Shakespeare in the Park in New York; and Arthur Hughes, right, at the Royal Shakespeare Company in Britain.",
+    "copyright": "From left: David Hou; Sara Krulwich/The New York Times; Ellie Kurttz, via Royal Shakespeare Company"
+    },
+    {
+    "url": "https://static01.nyt.com/images/2022/07/27/arts/00CASTING-DEBATE-COMBO/00CASTING-DEBATE-COMBO-thumbLarge.jpg",
+    "format": "Large Thumbnail",
+    "height": 150,
+    "width": 150,
+    "type": "image",
+    "subtype": "photo",
+    "caption": "Three productions this summer of “Richard III” took different approaches to the title role: Colm Feore, left, appeared at the Stratford Festival in Canada; Danai Gurira, center, at Free Shakespeare in the Park in New York; and Arthur Hughes, right, at the Royal Shakespeare Company in Britain.",
+    "copyright": "From left: David Hou; Sara Krulwich/The New York Times; Ellie Kurttz, via Royal Shakespeare Company"
+    }
+    ],
+    "short_url": "https://nyti.ms/3oBf0pK"
+    }
+  ]
+}
