@@ -8,3 +8,19 @@
   padding: 0.6em;
   font-size: 1.2em;
 }
+
+.save-btn {
+  background-color: #f7f5f5;
+  border: none;
+  margin-top: 1em;
+  font-size: 1.2em;
+  padding: 0.6em;
+  border-radius: 1em;
+  font-family: 'Ibarra Real Nova', serif;
+}
+
+.save-btn:hover {
+  cursor: pointer;
+  transform: scale(1.06);
+  transition: .6s;
+}
