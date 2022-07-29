@@ -13,11 +13,13 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
           setError(false)
           return response.json()
         } else {
-          setError(true)
+          return setError(true)
         }
       })
       .then(data => {
-        setDisplayedArticles(data.results)
+        if(!error) {
+          setDisplayedArticles(data.results)
+          }
         }
       )
   }, [displayedCategory])
@@ -69,7 +71,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
         <option value='us'>US</option>
         <option value='world'>World</option>
       </select>
-      <Link to={'/saved'} onClick={clearCurrent}><button className='btn'><strong>Saved Articles</strong></button></Link>
+      <Link to={'/saved'} onClick={clearCurrent}><button className='btn saved-btn'><strong>Saved Articles</strong></button></Link>
     </section>
   )
 }

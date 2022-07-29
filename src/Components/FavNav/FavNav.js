@@ -12,7 +12,7 @@ const FavNav = ({ setCurrentArticle }) => {
   return(
     <section className='nav'>
       <h1 className='nav-title'>NYT Article Archive</h1>
-      <Link to={'/'} onClick={clearCurrent}><button className='btn'><strong>Back Home</strong></button></Link>
+      <Link to={'/'} onClick={clearCurrent}><button className='btn home-btn'><strong>Back Home</strong></button></Link>
     </section>
   )
 }
