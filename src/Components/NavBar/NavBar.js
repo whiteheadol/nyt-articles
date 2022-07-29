@@ -59,6 +59,7 @@ const NavBar = ({ setDisplayedArticles, displayedCategory, setDisplayedCategory,
         <option value='us'>US</option>
         <option value='world'>World</option>
       </select>
+      <button className='saved-btn'><strong>Saved Articles</strong></button>
     </section>
   )
 }

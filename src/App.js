@@ -13,12 +13,12 @@ function App() {
   const [displayedCategory, setDisplayedCategory] = useState('home');
   const [categoryText, setCategoryText] = useState('home');
   const [currentArticle, setCurrentArticle] = useState({});
+  const [savedArticles, setSavedArticles] = useState([]);
 
   useEffect(() => {
     fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=GuWKVIUUyA3DlfmPdjbouV6EFbkXQbVv")
       .then(response => response.json())
       .then(data => {
-        // console.log(data.results)
         setDisplayedArticles(data.results)
         console.log('app')
         }
@@ -37,6 +37,8 @@ function App() {
         />
         <ArticleDetails
           currentArticle={currentArticle}
+          savedArticles={savedArticles}
+          setSavedArticles={setSavedArticles}
         />
       </div>
         <ArticlesContainer
